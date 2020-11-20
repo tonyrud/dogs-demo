@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shibas!</title>
+    <link
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="bg-blue-100 mb-6">
+      <section class="px-5 py-10">Dogs Demo</section>
+    </header>
+    <main
+      class="container mx-auto flex flex-col items-center justify-start h-screen"
+    >
+      <div id="shibas">
+        <div class="flex items-center justify-between w-max mb-5">
+          <button
+            id="btn-new"
+            class="bg-gray-300 mr-5 rounded-md p-2 inline-flex items-center justify-center text-gray-800 hover:text-gray-500 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+          >
+            See A New Shiba!
+          </button>
+          <a
+            href="previous.html"
+            id="btn-previous"
+            class="bg-gray-300 mr-5 rounded-md p-2 inline-flex items-center justify-center text-gray-800 hover:text-gray-500 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+          >
+            See Previous Shibas
+          </a>
+          <select
+            name="pets"
+            id="pet-select"
+            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          >
+            <option value="">--Choose a different dog--</option>
+          </select>
+        </div>
+        <figure class="max-w-xl max-h-96 object-contain overflow-hidden">
+          <img id="main-img" src="" alt="random shiba dog" />
+        </figure>
+      </div>
+    </main>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
